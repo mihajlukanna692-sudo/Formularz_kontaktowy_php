@@ -1,0 +1,3 @@
+Agnieszka | Kowalska | kowalska@gmail.com | jgh | gjguguy
+Magda | Lisowska | magda@gmail.pl | Temat | Wiadomość
+Adam | Nowiński | adamn@gmail.pl | Temat | Wiadomość

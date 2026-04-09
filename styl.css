@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4e4e82, #1e1e2f);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.formularz {
+    width: 400px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.input {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input input,
+.input textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+}
+
+.input label {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    color: #ccc;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.input input:focus ~ label,
+.input input:not(:placeholder-shown) ~ label,
+.input textarea:focus ~ label,
+.input textarea:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #4e4e82;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #ddd;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

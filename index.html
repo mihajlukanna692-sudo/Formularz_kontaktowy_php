@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz kontaktowy</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    
+    
+    <div class="container">
+        
+    <div class="formularz">
+        <form action="formularz.php" method="POST">
+             <h2>Formularz kontaktowy</h2>
+
+              <div class="input">
+                    <input type="text" id="imie" name="imie" placeholder=" " required> 
+                      <label for="imie">Imię:</label>
+            </div>
+
+            <div class="input">
+                <input type="text" id="nazwisko" name="nazwisko"  placeholder=" " required> 
+                 <label for="nazwisko">Nazwisko:</label>
+            </div>
+
+            <div class="input">
+                <input type="email" id="email" name="email" placeholder=" " required> 
+                  <label for="email">E-mail:</label>
+            </div>
+
+            <div class="input">
+                <input type="text" id="temat" name="temat" placeholder=" " required> 
+                <label for="temat">Temat:</label>
+            </div>
+
+            <div class="input">
+                <textarea name="tresc" id="tresc" placeholder=" " required ></textarea>
+                  <label for="tresc">Wiadomość:</label>
+            </div>
+             
+            <input type="submit" name="zapisz" value="Zapisz">
+            <a href="wiadomosci.php">Zapisane wiadomości</a>
+             
+        </form>
+    </div>
+    </div>
+  
+</body>
+</html>
